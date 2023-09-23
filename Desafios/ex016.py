@@ -1,0 +1,10 @@
+print()
+print('Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira.')
+print('\n')
+from math  import trunc
+numero = float(input('Digite um numero diferente de um inteiro:>>>>>'))
+numberInt = int(numero)
+MetodoTrunc = trunc(numero)
+print('O número digitado é {}. Usando o metodo Trunc {}'.format(numero,MetodoTrunc))
+print('O número digitado é {}. Usando o metodo format {:.0f}'.format(numero,numberInt))
+print('O número digitado é {}. Usando o metodo  numberInt {}'.format(numero,numberInt))
