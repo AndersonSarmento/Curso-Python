@@ -3,7 +3,7 @@ print('Faça um programa que mostre na tela uma contagem regressiva para o estou
 print('{:-^60}'.format('CONTADOR'))
 from time import sleep 
 
-for contador in range(10,-1,-1):
+for contador in range(20,-1,-1):
     print('É',contador,'!' )
     sleep(1)
 print('BUMM! BUMM POOOW!')
