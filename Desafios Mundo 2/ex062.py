@@ -9,13 +9,17 @@ primeiro = int(input('Primeiro termo: '))
 razão = int(input('Razão: '))
 termo = primeiro
 cont = 1
-while cont <= 10:
-    print('{} - '.format(termo),end='')
-    termo += razão
-    cont += 1
-  
- 
+total = 0
+mais = 10
+while mais != 0:
+    total = total + mais
+    while cont <= total:
+        print('{} - '.format(termo),end='')
+        termo += razão
+        cont += 1
+    print('PAUSA')
+    mais = int(input('Qhantos termos você quer mostar a mais' ))
 
-print()
+print('Progressão finalizada com {} mostrados'.format(total))
 
 
