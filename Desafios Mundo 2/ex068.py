@@ -9,22 +9,29 @@ jokepo = ['Papel','Tesoura','Pedra' ]
 perdeu = pontos = 0
 
 while True:    
+   
+    usuario = input('Digite a sua escolha ').strip().capitalize()
+    print(f'usuario{usuario}')
     pc =random.choice(jokepo)
     print(f'pc{pc}')
-    usuario = input('Digite a sua escolha ').strip().capitalize()
-    print(usuario)
-    if perdeu != 0:
+    if perdeu > 0:
         break 
-    if usuario == pc:
+    elif usuario == pc:
         print(f'Jogue novamente, pois ambos jogaran a mesma mão: {pc}')
-    elif usuario == 'Papel' and pc == 'Pedra' or pc == 'Papel' and usuario == 'Pedra' :
+    elif usuario == 'Papel' and pc == 'Pedra':
         pontos += 1
-    elif usuario == 'Pedra' and pc == 'Tesoura' or pc == 'Pedra' and usuario == 'Tesoura':
-        pontos += 1
-    elif usuario == 'Tesoura' and pc == 'Papel' or pc == 'Tesoura' and usuario == 'Papel':
-        pontos += 1
-    else:
+    elif usuario == 'Papel' and pc == 'Tesoura':
         perdeu += 1
+    elif usuario == 'Pedra' and pc == 'Tesoura':
+        pontos += 1
+    elif usuario == 'Pedra' and pc == 'Papel':
+        perdeu += 1
+    elif usuario == 'Tesoura' and pc == 'Papel':
+        pontos += 1
+    elif usuario == 'Tesoura' and pc == 'Pedra':
+        perdeu += 1
+    else:
+        print(f'Essa jogada {usuario} é incorreta')
 print(f'Pontos {pontos}')
 
 
