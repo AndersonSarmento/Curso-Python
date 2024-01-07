@@ -28,9 +28,10 @@ while True:
 print('{:-^40}'.format(' Fim do Programa '))
 print(f'O total da compra foi R$ {total}')
 print(f'Temos {maior_que_mil} produto(s) custando mais de R$ 1000.00')
-print(f'O produto mais barato foi que {barato} custa R$ {menor:.2f}')
+print(f'O produto mais barato foi {barato} custa R$ {menor:.2f}')
 print('')
-
+ 
+#outra alternativa para o trecho da linha 20
 #if cont == 1:
 #       menor = preco
 #       barato = produto
