@@ -6,9 +6,9 @@ print('B) quantos homens foram cadastrados.')
 print('C quantas mulheres tem menos de 20 anos.')
 print()
 
-print('--'*30)
-print('Cadadastre uma pessoa')
-print('--'*30)
+print('-'*30)
+print('{:-^30}'.format(' Cadadastre uma pessoa '))
+print('-'*30)
 
 cont_maior = cont_menor =  cont_mu20 = cont_h20 = 0
 cont_homen = 0
@@ -39,6 +39,9 @@ while True:
     if resp == 'N':
         break
 
+print('-'*30)
+print('{:-^30}'.format(' Cadadastros efetuados '))
+print('-'*30)
 print(f'Total de pessoas com mais de 18 anos:{cont_maior} e {cont_menor} com menos')
 print(f'Ao todo temos {cont_homen} homen(s) cadastrados e {cont_mulher} mulheres')
 print(f'E temos {cont_mu20} mulheres com menos de 20 anos')
