@@ -26,5 +26,6 @@ print(f'Resposta B:\n{times[-5:-1]}\n')
 print(f'Resposta C:\n{sorted(times)}\n')
 
 print(f'Resposta C:')
-print(f'O Chapecoense está na{times.index("Chapecoense")} posição')
+print(f'O Chapecoense está na {times.index("Chapecoense")+1} posição')
+print()
 
