@@ -17,14 +17,10 @@ times =('Palmeiras', 'Flamengo', 'Internacional', 'Gremio', 'Sao Paulo',
 
     
 #resp=str(input('Digite a resposta que você deseja ter?')).strip().upper()[0]
-    
-    
+
 print(f'Resposta A:\n{times[0:6]}\n')
-  
 print(f'Resposta B:\n{times[-5:-1]}\n')
-
 print(f'Resposta C:\n{sorted(times)}\n')
-
 print(f'Resposta C:')
 print(f'O Chapecoense está na {times.index("Chapecoense")+1} posição')
 print()
