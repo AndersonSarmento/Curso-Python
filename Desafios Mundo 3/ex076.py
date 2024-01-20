@@ -1,0 +1,5 @@
+print('')
+print('{:=^80}'.format(' Exercício Python 76 '))
+print('Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos')
+print('preços, na sequência. No final, mostre uma listagem de preços, organizando os dados em forma tabular.')
+print('')
