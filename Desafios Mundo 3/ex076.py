@@ -14,14 +14,12 @@ lista =('Lápis',1.75,
         'Canetas',22.30,
         'Livros',34.90)
 
-x=0
-y=1
+print('-'*40)
 print('{:=^40}'.format(' LISTAGEM DE PREÇOS '))
-
+print('-'*40)
 for i in range(0,len(lista)):
-    print(f'{lista[x]:.<30} R$ {lista[y]}')
-    x +=2
-    y +=2
-
-print('')
-
+    if i %2 == 0:
+        print(f'{lista[i]:.<30}', end='')
+    else:
+        print(f'R${lista[i]:>7.2f}')
+print('-'*40)
