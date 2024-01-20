@@ -1,0 +1,6 @@
+print()
+print('{:=^80}'.format('Exercício Python 74'))
+print('')
+print('Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla.')
+print('Depois disso, mostre a listagem de números gerados e também indique\no menor e o maior valor que estão na tupla.')
+print()
