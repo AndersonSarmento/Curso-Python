@@ -6,13 +6,9 @@ print()
 
 
 lista =(
-        'APREENDER','PROGRAMAR','LINGAUAGEM',
+        'APREENDER','PROGRAMAR','LINGUAGEM',
         'PYTHON','CURSO','GRATIS',
         'ESTUDAR','PRATICAR','TRABALHAR',
         'MERCADO','PROGAMADOR','FUTURO')
 
-vogais = []
-
-for i in range(0, len(lista)):
-    print(lista[i])
-     
+for i in lista:
