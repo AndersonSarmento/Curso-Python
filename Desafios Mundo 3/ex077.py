@@ -13,5 +13,14 @@ lista =(
 
 
 for i in lista:
-        tamanho = len(i)
-        print(i[0:tamanho])
+        if 'A' in i:
+                print(i+'-A')
+        elif 'E' in i:
+               print(i+'-E')
+        elif 'I' in i:
+               print(i+'-I')
+        elif 'O' in i:
+               print(i+'-O') 
+        elif 'U' in i:
+               print(i+'-U') 
+
