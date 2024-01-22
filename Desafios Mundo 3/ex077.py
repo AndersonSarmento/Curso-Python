@@ -15,12 +15,12 @@ lista =(
 for i in lista:
         if 'A' in i:
                 print(i+'-A')
-        elif 'E' in i:
-               print(i+'-E')
-        elif 'I' in i:
-               print(i+'-I')
-        elif 'O' in i:
-               print(i+'-O') 
-        elif 'U' in i:
-               print(i+'-U') 
+                if 'E' in i:
+                        print(i+'-E')
+                        if 'I' in i:
+                                print(i+'-I')
+                                if 'O' in i:
+                                        print(i+'-O')
+                                        if 'U' in i:
+                                                print(i+'-U') 
 
