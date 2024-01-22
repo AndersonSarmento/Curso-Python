@@ -11,4 +11,7 @@ lista =(
         'ESTUDAR','PRATICAR','TRABALHAR',
         'MERCADO','PROGAMADOR','FUTURO')
 
+
 for i in lista:
+        tamanho = len(i)
+        print(i[0:tamanho])
