@@ -14,13 +14,15 @@ lista =(
 
 for i in lista:
         if 'A' in i:
-                print(i+'-A')
+                vogais.append('-A')
                 if 'E' in i:
-                        print(i+'-E')
+                        vogais.append('-E')
                         if 'I' in i:
-                                print(i+'-I')
+                                vogais.append('-I')
                                 if 'O' in i:
-                                        print(i+'-O')
+                                        vogais.append('-O')
                                         if 'U' in i:
-                                                print(i+'-U') 
+                                                vogais.append('-U')
+                                                print(vogais)
+ 
 
