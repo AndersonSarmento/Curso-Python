@@ -5,24 +5,15 @@ print('Depois disso, você deve mostrar, para cada palavra, quais são as suas v
 print()
 
 
-lista =(
+palavras =(
         'APREENDER','PROGRAMAR','LINGUAGEM',
         'PYTHON','CURSO','GRATIS',
         'ESTUDAR','PRATICAR','TRABALHAR',
         'MERCADO','PROGAMADOR','FUTURO')
 
-
-for i in lista:
-        if 'A' in i:
-                vogais.append('-A')
-                if 'E' in i:
-                        vogais.append('-E')
-                        if 'I' in i:
-                                vogais.append('-I')
-                                if 'O' in i:
-                                        vogais.append('-O')
-                                        if 'U' in i:
-                                                vogais.append('-U')
-                                                print(vogais)
- 
-
+for p in palavras:
+        print(f'\nNa palavra {p} temos:', end='')
+        for letra in p:
+                if letra in 'AEIOU':
+                        print(letra, end=' ')
+print(' ')
