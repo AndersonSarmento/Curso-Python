@@ -13,11 +13,12 @@ while cont <=5:
     cont +=1
     pos  +=1
     lista.append(numero)
-
+print('')
 maior = sorted(lista)[-1]
 menor = sorted(lista)[0]
-print(f'Você digitou os valores {lista}')
 
+
+print(f'Você digitou os valores {lista}')
 for pos,i in enumerate(lista):
     if maior == i:
         print(f'O maior valor digitado foi {maior} nas posições {pos}')
