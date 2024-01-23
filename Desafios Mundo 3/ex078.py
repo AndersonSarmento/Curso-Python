@@ -1,0 +1,5 @@
+print('')
+print('{:=^80}'.format(' Exercício Python 78'))
+print('')
+print('Faça um programa que leia 5 valores numéricos e guarde-os em uma lista. No final,') 
+print('mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista.')
