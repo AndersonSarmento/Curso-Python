@@ -16,16 +16,33 @@ while cont <=5:
 print('')
 maior = sorted(lista)[-1]
 menor = sorted(lista)[0]
-
-
+#elemento que retira a repetição do for
+contm = contme = 0 
+print(menor)
 print(f'Você digitou os valores {lista}')
-for pos,i in enumerate(lista):
-    if maior == i:
-        print(f'O maior valor digitado foi {maior} nas posições {pos}')
-    elif menor == i:
-        print(f'O menor valor digitado foi {menor} nas posições {pos}')
-        
-print('---------------------------------------------------------------------------------------')
+for i in lista:
+    if i == maior and contm == 0: 
+        contm += 1        
+        print(f' O maior valor digitado foi {maior} nas posições', end='')
+        for p,i in enumerate(lista):
+            if i == maior:
+                print(f' {p}...',end='')
+print()
+for i in lista:        
+    if i == menor and contme == 0: 
+        contme += 1        
+        print(f' O menor valor digitado foi {menor} nas posições', end='')
+        for p,i in enumerate(lista):
+            if i == menor:
+                print(f' {p}...',end='')
+
+
+
+
+    
+    #elif menor == i:
+    #    print(f'O menor valor digitado foi {menor} nas posições {pos}')
+print('\n')
 print('{:=^80}'.format(' Solução Guanabara'))
 
 listanum=[]
