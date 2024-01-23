@@ -18,7 +18,7 @@ maior = sorted(lista)[-1]
 menor = sorted(lista)[0]
 #elemento que retira a repetição do for
 contm = contme = 0 
-print(menor)
+
 print(f'Você digitou os valores {lista}')
 for i in lista:
     if i == maior and contm == 0: 
@@ -35,20 +35,15 @@ for i in lista:
         for p,i in enumerate(lista):
             if i == menor:
                 print(f' {p}...',end='')
-
-
-
-
-    
-    #elif menor == i:
-    #    print(f'O menor valor digitado foi {menor} nas posições {pos}')
+ 
+   
 print('\n')
 print('{:=^80}'.format(' Solução Guanabara'))
 
 listanum=[]
 mai = men = 0
 for c in range(0,5):
-    listanum.append(int(input(f'Digite um valor para a posição{c}: ')))
+    listanum.append(int(input(f'Digite um valor para a posição {c}: ')))
     if c == 0:
         mai = men = listanum[c]
     else:
