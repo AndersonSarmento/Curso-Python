@@ -7,10 +7,15 @@ print('No final, serão exibidos todos os valores únicos digitados, em ordem cr
 print('')
 valores = []
 
-numero = int(input('Digite o seu número'))
-valores.append(numero)
-print(valores)
-
+while True:
+    numero = int(input('Digite o seu número'))
+    valores.append(numero)
+    print(valores)
+    resp=' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? S/N :')).upper().strip()[0]
+    if resp == 'N':
+        break
 
 
 
