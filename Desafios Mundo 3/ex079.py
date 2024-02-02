@@ -6,9 +6,15 @@ print('Caso o número já exista lá dentro, ele não será adicionado.')
 print('No final, serão exibidos todos os valores únicos digitados, em ordem crescente')
 print('')
 valores = []
+numero = 0
 
 while True:
-    numero = int(input('Digite o seu número'))
+    if numero not in valores:
+        numero = int(input('Digite o seu número'))
+        valores.append(numero)
+    else:
+        print('Digite outro valor este já está na lista')
+
     valores.append(numero)
    
     resp=' '
@@ -16,7 +22,7 @@ while True:
         resp = str(input('Quer continuar? S/N :')).upper().strip()[0]
     if resp == 'N':
         break
-print(valores)
+print(sorted(valores)[:1])
 
 
 
