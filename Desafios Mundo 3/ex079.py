@@ -8,6 +8,7 @@ print('')
 valores = []
 numero = 0
 
+
 while True:
     if numero not in valores:
         numero = int(input('Digite o seu número'))
