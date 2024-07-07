@@ -1,6 +1,6 @@
 # Curso de Python
 
-![python](image.png)
+![python](imagen.png)
 
 [Curso em video](https://youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&si=qE1yBpE9hQvrvKZt)
 
