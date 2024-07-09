@@ -9,7 +9,7 @@ print('-='*30)
 #cadastra  as pessoas
 dado = list()
 pessoas = list()
-for c in range(0,10):
+for c in range(0,3):
     dado.append(str(input('Nome: ')))
     dado.append(int(input('Peso ')))
     pessoas.append(dado[:])
@@ -33,6 +33,7 @@ for p in pessoas:
         leve.append(p[0])
 
 print(f'A) Temos',totpessoas,'cadastradas')
-print(f' Temos uma média de peso  de {media} então as listas são:')
-print(f'B) Leves: {leve}')
-print(f'C) Pesados:{pesado}')
+print(f' Temos uma média de peso  de {media} então')
+print(f'B)Os leves são{leve}')
+print(f'C)Os pesados são{pesado}')
+
