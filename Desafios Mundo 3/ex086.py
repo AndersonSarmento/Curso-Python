@@ -1,0 +1,5 @@
+print()
+print('{:=^80}'.format(' Exercício Python 86'))
+print()
+print('Crie um programa que declare uma matriz de dimensão 3x3 e preencha com valores lidos pelo teclado.')
+print('No final, mostre a matriz na tela, com a formatação correta')
