@@ -26,25 +26,31 @@ print(f'Aqui temos a nossa matriz')
 print('---'*20)
 pares =[]
 terceira_coluna = []
-maior = []
+maior = 0
 n = 0
 
 
 
 for linha in matriz:
     for numero in linha:
-        print(matriz[1][n])
-        if numero == matriz[1]:
-            maior.append(numero)
         if numero == matriz[n][2]:
             terceira_coluna.append(numero)
         if numero %2 == 0:
             pares.append(numero)
         
     n += 1
+
+for c in range(0,3):
+    if c==0:
+        maior == matriz[1][c]
+    elif matriz[1][c] > maior:
+        maior= matriz[1][c]
     
+
+
    
-print(maior)
+
 print(f'A)A soma de todos os valores pares digitados é:',sum(pares))
 print(f'B) A soma dos valores da terceira coluna é:',sum(terceira_coluna))
 print(f'C) O maior valor da segunda linha.',maior)
+
