@@ -18,5 +18,5 @@ for c in range(1,8):
         num[1].append(valor)
 
 print(f'Os valores pares são{sorted(num[0])}')
-print(f'Os valores pares são{sorted(num[1])}')
-
+print(f'Os valores inpares são{sorted(num[1])}')
+print('-='*30)
